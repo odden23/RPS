@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock, Paper, Scissors</title>
+</head>
+<body>
+
+<script>
+let playerScore = 0;
+let computerScore = 0;
+
+// Computer Selection
+	function computerPlay() {
+			
+// Create an array of possible choices.
+	const compOptions = ['Rock', 'Paper', 'Scissors'];
+			
+// Function to randomly select an index number.
+	let compSelector = Math.floor(Math.random() * 3);
+			
+// Use selector to select option.
+	return compOptions[compSelector];
+		}
+	
+
+function gameRound(){
+			// This is the main loop of the game.
+			while(computerScore < 5 && playerScore < 5) {
+				
+				
+// These are the occurances where the computer wins
+if 
+	(computerX === "rock" && playerX === "scissors" || 
+	computerX === "paper" && playerX === "rock" || 
+	computerX === "scissors" && playerX = "paper") 
+		{console.log("You Lose!" + player1 + "loses to" +  computer1 + "!") 
+			computerScore++;
+		}
+		
+// These are the occurances where the player wins
+else
+	(playerX === "rock" && computerX === "scissors" || 
+	playerX === "paper" && computerX === "rock" || 
+	playerX === "scissors" && playerX = "paper") 
+		{console.log("You Win!" + player1 + "defeats" +  computer1 + "!") 
+			playerScore++;
+		}
+	
+	
+else if
+	(playerX === "rock" && computerX === "rock" || 
+	playerX === "paper" && computerX === "paper" || 
+	playerX === "scissors" && playerX = "scissors") 
+		{console.log("It's a Draw!" + player1 + "ties" +  computer1 + "!") 
+		}
+				
+// Display the current score.
+	console.log('The score is ' + playerScore + ' to ' + computerScore + ".")
+				
+// If computer gets 5 points first.
+			if(computerScore > 4){
+				console.log('You lose. Try again!')
+			}
+			else{playerScore > 4){
+				console.log('You win! Congratulations!')
+			}
+	
+function gameRound()
+	
+	
+</script>
+</body>
+</html>
